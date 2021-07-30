@@ -22,13 +22,21 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    email: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true,
+      validate: {
+        isEmail: true,
+      },
+    },
     // define a password column
     password: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
         // this means the password must be at least four characters long
-        len: [4],
+        len: [10],
       },
     },
   },
@@ -38,14 +46,6 @@ User.init(
       async beforeCreate(newUserData) {
         newUserData.password = await bcrypt.hash(newUserData.password, 10);
         return newUserData;
-      },
-      // set up beforeUpdate lifecycle "hook" functionality
-      async beforeUpdate(updatedUserData) {
-        updatedUserData.password = await bcrypt.hash(
-          updatedUserData.password,
-          10
-        );
-        return updatedUserData;
       },
     },
 
