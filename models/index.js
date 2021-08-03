@@ -8,7 +8,7 @@ User.hasMany(Post, {
 })
 
 Post.belongsTo(User, {
-    foreign_key: "user_id"
+    foreignKey: "user_id"
 })
 
 User.belongsToMany(Post, {
