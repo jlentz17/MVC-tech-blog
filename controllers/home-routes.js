@@ -7,8 +7,8 @@ router.get("/", (req, res) => {
   Post.findAll({
     attributes: [
       "id",
-      "title",
       "content",
+      "title",
       "created_at",
       [
         sequelize.literal(
@@ -51,8 +51,8 @@ router.get("/post/:id", (req, res) => {
     },
     attributes: [
       "id",
-      "title",
       "content",
+      "title",
       "created_at",
       [
         sequelize.literal(
