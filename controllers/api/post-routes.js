@@ -3,7 +3,7 @@ const router = require("express").Router();
 const { Post, User, Vote, Comment } = require("../../models");
 const withAuth = require("../../utils/auth")
 
-router.get("/", withAuth, (req, res) => {
+router.get("/", (req, res) => {
   Post.findAll({
     attributes: [
       "id",
@@ -39,7 +39,8 @@ router.get("/", withAuth, (req, res) => {
     });
 });
 
-router.get("/:id", withAuth, (req, res) => {
+router.get("/:id", (req, res) => {
+  console.log(req.params.id)
   Post.findOne({
     where: {
       id: req.params.id,
@@ -85,6 +86,8 @@ router.get("/:id", withAuth, (req, res) => {
 });
 
 router.post("/", withAuth, (req, res) => {
+  console.log(req.body)
+  console.log(req)
   Post.create({
     title: req.body.title,
     content: req.body.content,

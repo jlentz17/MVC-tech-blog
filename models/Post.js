@@ -20,7 +20,7 @@ class Post extends Model {
             sequelize.literal(
               "(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)"
             ),
-            "vote_count",
+            "vote_count"
           ],
         ],
         include: [
@@ -59,7 +59,7 @@ Post.init(
     },
     content: {
       type: DataTypes.STRING,
-      allowNull: false,
+      // allowNull: false,
     },
     user_id: {
       type: DataTypes.INTEGER,
