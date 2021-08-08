@@ -21,19 +21,17 @@ a:hover {
   color: #0b71ee;
 }
 
-button {
-  background-color: #004ba7;
-  border: 0;
-  padding: 1%;
-  color: white;
-  font-weight: bold;
-  transition: background-color .1s;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
 button:hover {
-  background-color: #0e76f5;
+  background-color: #fa8bff;
+  background-image: linear-gradient(
+    45deg,
+    #fa8bff 0%,
+    #2bd2ff 52%,
+    #2bff88 90%
+  );
+  transition: all 0.5s ease-out;
+  background-size: 1px 100px;
+  background-position: 0px -10px;
 }
 
 .post-list {
@@ -44,7 +42,7 @@ button:hover {
 textarea, input {
   padding: .5%;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
 }
 
 textarea:focus, input:focus {
