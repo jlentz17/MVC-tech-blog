@@ -16,6 +16,7 @@ async function signupFormHandler(event) {
       headers: { "Content-Type": "application/json" },
     });
     if (response.ok) {
+      window.location.href = "/dashboard"
       console.log("success");
     } else {
       alert(response.statusText);
