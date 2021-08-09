@@ -41,7 +41,7 @@ button:hover {
 
 textarea, input {
   padding: .5%;
-  border-radius: 5px;
+  border-radius: 8px;
   border: 2px solid #ccc;
 }
 
@@ -106,6 +106,7 @@ main {
 .btn-no-style:hover {
   background: none;
   color: #3486eb;
+  border-radius: 40px;
 }
 
 .delete-post-btn {
@@ -114,6 +115,7 @@ main {
 
 .delete-post-btn:hover {
   background-color: #ff643d;
+  border-radius: 40px;
 }
 
 .post {
@@ -139,6 +141,7 @@ main {
 
 .upvote-btn:hover {
   background-color: #1f9c13;
+  border-radius: 40px;
 }
 
 .form-comment {
