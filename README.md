@@ -33,6 +33,8 @@ Enter app and login or signup so that you can browse posts amd enter in a post o
 
 Insomnia
 
+## Screenshot: ![Image of Tech-Blog]()
+
 ## Contributers:
 
 David Lopez- Worked together to finish this so we can focus on the project.
