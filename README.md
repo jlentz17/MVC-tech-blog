@@ -33,6 +33,10 @@ Enter app and login or signup so that you can browse posts amd enter in a post o
 
 Insomnia
 
+## Contributers:
+
+David Lopez- Worked together to finish this so we can focus on the project.
+
 ## Questions
 
 Do you have anything you'd like to contribute? Or have any questions for me?
