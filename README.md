@@ -1,6 +1,6 @@
 # MVC-tech-blog
 
-[GitHub Repo](https://github.com/jlentz17/MVC-tech-blog)
+[GitHub Repo](https://github.com/jlentz17/MVC-tech-blog)<br>
 [Heroku App](https://calm-scrubland-13266.herokuapp.com/)
 
 ## Description
