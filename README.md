@@ -33,7 +33,7 @@ Enter app and login or signup so that you can browse posts amd enter in a post o
 
 Insomnia
 
-## Screenshot: ![Image of Tech-Blog]()
+## Screenshots: ![Image of Tech-Blog]("MVC-screenshot1.png"),[]("MVC-screenshot2.png"),[]("MVC-screenshot3.png")
 
 ## Contributers:
 
